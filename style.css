@@ -55,13 +55,20 @@ input {
 /*  END CSS RESET */
 
 /* GLOBAL */
+html  {
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+}
 #content {
   background: #f9f9f9;
-  height: 500px;
 }
 
 button {
   cursor: pointer;
+}
+
+article {
+  margin-top: 56px;
 }
 
 /* NAV */
@@ -72,13 +79,12 @@ button {
 
 .logo-container img {
   height: 18px;
+  cursor: pointer;
 }
 
 .logo-container::after {
-  font-family: sans-serif;
   content: "ca";
   text-transform: uppercase;
-  font-size: 0.6rem;
   color: #606060;
   vertical-align: top;
 }
@@ -93,6 +99,7 @@ button {
   top: 0;
   width: 100%;
   background: #fff;
+  z-index: 2020;
 }
 .nav-container {
   display: flex;
@@ -107,8 +114,24 @@ button {
 }
 
 .control-item {
+  padding-right: 8px;
+  margin-left: 8px;
+}
+
+.control-item a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: .007px;
+  text-transform: uppercase;
+  color: #000;
+  opacity: .6;
+}
+
+.control-item img {
   padding: 8px;
-  margin-right: 8px;
 }
 
 /* FORMS */
@@ -163,3 +186,68 @@ button {
   border-radius: 100px;
   background: #2d2d2d;
 }
+
+/* VIDEO EMBED */
+
+/* Makes the ifrom grow and shrink with the container size.
+   I didn't write this myself. Found the code @ https://speedboostr.com/how-to-embed-responsive-videos/ */
+.responsive-video {
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.responsive-video iframe,
+.responsive-video object,
+.responsive-video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* PRIMARY CONTENT */
+.page-content {
+  margin-top: 56px;
+}
+
+.primary {
+  margin: auto;
+  max-width: 1280px;
+  padding-top: 24px;
+}
+
+#info-contents {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 20px 0 8px 0;
+}
+
+#info-contents h1 {
+  font-weight: 400;
+  line-height: 2.4rem;
+  font-size:1.8rem;
+}
+
+#info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
+}
+
+#info-text {
+  opacity: 0.6;
+}
+
+#like-bar-container {
+  position: absolute;
+  padding-top: 7px;
+}
+#like-bar {
+  height: 2px;
+  width: 166px;
+  background:  #000;
+  opacity: 0.5;
+}
+
