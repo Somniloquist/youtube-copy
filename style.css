@@ -120,6 +120,7 @@ h2 {
 .nav-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 0 16px;
   height: 56px;
 }
@@ -160,8 +161,22 @@ h2 {
 .search-form {
   width: 100%;
   max-width: 640px;
-  margin: 0 auto;
+  margin: 0 40px;
+
 }
+
+@media screen and (max-width: 655px) {
+  .search-form {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 655px) {
+  .search-btn {
+    display: none;
+  }
+}
+
 .search-box {
   width: 100%;
   border: 1px solid #ccc;
