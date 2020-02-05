@@ -319,6 +319,8 @@ h2 {
   font-weight: 600;
   font-size: 1.4rem;
   line-height: 1.6;
+  text-decoration: none;
+  color: #000;
 }
 
 #sub-count {
