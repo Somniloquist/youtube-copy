@@ -532,3 +532,16 @@ h2 {
   flex: 1;
   padding: 24px 24px 0 0;
 }
+
+#sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#autoplay-label {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  color: #000;
+  opacity: 0.5;
+}
