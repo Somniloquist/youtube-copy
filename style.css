@@ -58,8 +58,6 @@ input {
 html  {
   font-family: Arial, sans-serif;
   font-size: 10px;
-}
-#content {
   background: #f9f9f9;
 }
 
@@ -69,6 +67,18 @@ button {
 
 article {
   margin-top: 56px;
+}
+
+h2 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+@media screen and (max-width: 588px) {
+  .hide-sm {
+    display: none;
+  }
 }
 
 /* NAV */
@@ -93,6 +103,12 @@ article {
   padding: 8px;
   margin-right: 16px;
 }
+
+@media screen and (max-width: 588px) {
+  #info {
+  }
+}
+
 
 .nav {
   position: fixed;
@@ -183,8 +199,7 @@ article {
 .avatar img {
   height: 32px;
   width: 32px;
-  border-radius: 100px;
-  background: #2d2d2d;
+  border-radius: 50%;
 }
 
 /* VIDEO EMBED */
@@ -236,7 +251,7 @@ article {
   font-size: 1.4rem;
 }
 
-#info-text {
+.info-text {
   opacity: 0.6;
 }
 
@@ -249,5 +264,216 @@ article {
   width: 166px;
   background:  #000;
   opacity: 0.5;
+}
+
+/* META */
+.row {
+  display: flex;
+  padding-top: 16px;
+  margin-bottom: 12px;
+  align-items: center;
+}
+#meta-contents {
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+}
+#uploader-avatar img {
+  height: 48px;
+  width: 48px;
+  border-radius: 100px;
+  margin-right: 16px;
+}
+#video-owner {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+#channel-info {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+#channel-name {
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+#sub-count {
+  font-size: 1.3rem;
+}
+
+#description-container {
+  margin-left: 64px;
+}
+
+#description {
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  max-height: 60px;
+  overflow: hidden;
+}
+
+#expander {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 600;
+  opacity: 0.6;
+  margin-top: 8px;
+}
+
+/* COMMENTS */
+#comments-header {
+  margin-bottom: 32px;
+}
+
+#comments .row {
+  padding: 0;
+}
+
+#comments-count {
+  margin-right: 32px;
+}
+
+#comment-form {
+  display: flex;
+  align-items: flex-start;
+}
+
+#comment-form input[type=text] {
+  width: 100%;
+  padding: 0 0 8px 0;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+}
+
+#comment-form img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin-right: 16px;
+}
+
+.comment p {
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+.comment-avatar  {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  margin-right: 16px;
+}
+.comment .row {
+  align-items: flex-start;
+  margin-bottom: 2px;
+}
+.comment-info {
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+}
+.comment-info a {
+  color: #000;
+  text-decoration: none;
+}
+.comment-info a:hover {
+  opacity: 1;
+}
+.comment-name {
+  font-weight: 600;
+  margin-right: 4px;
+}
+.comment-time {
+  opacity: 0.6;
+}
+.comment-actions {
+  color: #000;
+}
+.comment-actions img {
+  height: 16px;
+  width: 16px;
+}
+.comment-actions li {
+  color: #000;
+  display: flex;
+  align-items: center;
+}
+.comment-actions a {
+  opacity: 0.5;
+}
+.comment-actions a:hover {
+  opacity: 1;
+}
+.comment-up {
+  padding: 8px 8px 8px 0;
+}
+.comment-down {
+  padding:8px;
+}
+.like-count {
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  margin-right: 8px;
+  opacity: 0.5;
+  text-transform: uppercase;
+}
+.reply-expander  {
+  display: flex;
+  align-items: center;
+  color: #065fd4;
+  fill: #065fd4;
+  text-decoration: none;
+  line-height: 1.6rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-left: -6px;
+}
+
+#sort-filter {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+#sort-filter a {
+  display: flex;
+  align-items: center;
+  color: #000;
+  opacity: 0.6;
+  text-decoration: none;
+}
+#sort-filter img {
+  margin-right: 8px;
+}
+
+
+
+/* BUTTONS */
+.btn {
+  border-radius: 3px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 9px 15px;
+  background: transparent;
+  border: 1px solid #606060;
+  color: #606060;
+  text-transform: uppercase;
+  margin: 0 4px;
+}
+
+.btn-secondary {
+  color: #065fd4;
+  border: 1px solid #065fd4;
+}
+
+.btn-primary {
+  color: #fff;
+  border: 1px solid #cc0000;
+  background: #cc0000;
 }
 
