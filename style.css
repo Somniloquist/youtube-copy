@@ -84,6 +84,20 @@ h2 {
 .strike-through {
   text-decoration: line-through;
 }
+.row {
+  display: flex;
+  flex-direction: row;
+}
+/* .col {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  flex-basis: 100%;
+} */
+
+.align-center {
+  align-items: center;
+}
 
 /* NAV */
 /* logo */
@@ -246,10 +260,14 @@ h2 {
   margin-top: 56px;
 }
 
-.primary {
+#primary {
   margin: auto;
   max-width: 1280px;
-  padding-top: 24px;
+  padding: 24px 24px 0 0;
+  margin-left: 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 2;
 }
 
 #info-contents {
@@ -284,14 +302,13 @@ h2 {
   background:  #000;
   opacity: 0.5;
 }
+.video-item img {
+  height: 20px;
+  width: 20px;
+}
 
 /* META */
-.row {
-  display: flex;
-  padding-top: 16px;
-  margin-bottom: 12px;
-  align-items: center;
-}
+
 #meta-contents {
   border-bottom: 1px solid #e0e0e0;
   padding-bottom: 16px;
@@ -348,6 +365,10 @@ h2 {
 .notifications-icon {
   opacity: 0.4;
   padding: 4px;
+}
+.top-row {
+  padding-top: 16px;
+  margin-bottom: 12px;
 }
 
 /* COMMENTS */
@@ -504,3 +525,10 @@ h2 {
   background: #e0e0e0;
 }
 
+/* SIDEBAR SECONDARY */
+#secondary {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 24px 24px 0 0;
+}
