@@ -81,6 +81,10 @@ h2 {
   }
 }
 
+.strike-through {
+  text-decoration: line-through;
+}
+
 /* NAV */
 /* logo */
 .logo-container {
@@ -339,6 +343,10 @@ h2 {
   opacity: 0.6;
   margin-top: 8px;
 }
+.notifications-icon {
+  opacity: 0.4;
+  padding: 4px;
+}
 
 /* COMMENTS */
 #comments-header {
@@ -374,7 +382,9 @@ h2 {
   height: 40px;
   margin-right: 16px;
 }
-
+.comment-thread {
+  margin-bottom: 16px;
+}
 .comment p {
   font-size: 1.4rem;
   line-height: 2rem;
@@ -487,8 +497,8 @@ h2 {
 }
 
 .btn-primary {
-  color: #fff;
-  border: 1px solid #cc0000;
-  background: #cc0000;
+  color: #909090;
+  border: 1px solid #e0e0e0;
+  background: #e0e0e0;
 }
 
