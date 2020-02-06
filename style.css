@@ -547,6 +547,12 @@ h2 {
   padding: 24px 24px 0 0;
   max-width: 402px;
 }
+@media screen and (max-width: 1000px) {
+  #secondary {
+    display: none;
+  }
+}
+
 
 #sidebar-header {
   display: flex;
