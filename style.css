@@ -102,7 +102,9 @@ h2 {
   background: #e0e0e0;
   margin: 10px 0 18px 0;
 }
-
+.uppercase {
+  text-transform: uppercase;
+}
 /* NAV */
 /* logo */
 .logo-container {
@@ -606,13 +608,11 @@ h2 {
 }
 
 .recommended {
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 .recommended-details {
   display: flex;
   flex-direction: column;
-  overflow: hidden;
-  text-overflow: ellipsis;
   width: 100%;
 }
 .recommended-details h3 {
@@ -621,11 +621,19 @@ h2 {
   line-height: 1.6rem;
   font-weight: 600;
   margin-bottom: 4px;
+  overflow: hidden;
 }
 
 .channel-name {
+  display: flex;
+  align-items: center;
   font-size: 1.4rem;
   line-height: 1.8rem;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.channel-name img{
+  scale: 0.55;
 }
 
 .view-count {
@@ -651,6 +659,9 @@ h2 {
 }
 .recommended:hover .play {
   display: block;
+}
+.recommended:hover .play-all {
+  display: flex;
 }
 
 .icon-background {
@@ -701,4 +712,33 @@ h2 {
 .play svg{
   opacity: 0.8;
   scale: 2;
+}
+
+.play-all {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 168px;
+  height: 94px;
+  background: #000;
+  opacity: 0.7;
+  display: none;
+}
+.play-all-btn{
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+.play-all svg {
+  scale: 1.3;
+  fill: #fff;
+  margin-right: 8px;
+}
+.play-all span {
+  scale: 1.3;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
 }
