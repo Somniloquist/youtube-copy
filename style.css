@@ -537,6 +537,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 12px;
 }
 
 #autoplay-label {
@@ -544,4 +545,40 @@ h2 {
   font-size: 1.3rem;
   color: #000;
   opacity: 0.5;
+}
+
+.thumbnail img {
+  height: 94px;
+  width: 168px;
+  margin-right: 8px;
+}
+
+.recommended-details {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.recommended-details h3 {
+  max-height: 3.2rem;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.channel-name {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+}
+
+.view-count {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+}
+.more-btn {
+  opacity: 0.4;
+}
+.more-btn:hover {
+  opacity: 1;
 }
