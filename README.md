@@ -3,7 +3,7 @@ A ~~quick~~ project with the goal of creating a copy of a youtube video player p
 
 View on heroku(https://youtube-clone-00001.herokuapp.com/)
 
-#![Project screenshot](https://github.com/Somniloquist/youtube-copy/blob/master/public/screenshot.png)
+![Project screenshot](https://github.com/Somniloquist/youtube-copy/blob/master/public/screenshot.png)
 
 ## Installation
 Why?
