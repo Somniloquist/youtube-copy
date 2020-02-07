@@ -1,2 +1,2 @@
 # youtube-copy
-A quick project to copy the youtube video player page to brush up on CSS and flexbox skills. The project has no actual functionality it's purely to practice html/css.
+A ~~quick~~ project with the goal of creating a copy of a youtube video player page in excruciating detail. The project has no actual functionality it's purpose was purely to practice html/css/flexbox.
