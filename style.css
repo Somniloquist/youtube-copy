@@ -108,7 +108,7 @@ h2 {
 /* NAV */
 /* logo */
 .logo-container {
-  width: 129px;
+  width: 98px;;
 }
 
 .logo-container img {
@@ -127,12 +127,6 @@ h2 {
   padding: 8px;
   margin-right: 16px;
 }
-
-@media screen and (max-width: 588px) {
-  #info {
-  }
-}
-
 
 .nav {
   position: fixed;
@@ -154,6 +148,7 @@ h2 {
   align-items: center;
 }
 
+
 .control-item {
   padding-right: 8px;
   margin-left: 8px;
@@ -173,6 +168,37 @@ h2 {
 
 .control-item img {
   padding: 8px;
+}
+
+.nav-control-item {
+  padding-right: 8px;
+  margin-left: 8px;
+}
+
+.nav-control-item a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: .007px;
+  text-transform: uppercase;
+  color: #000;
+  opacity: .6;
+}
+
+.nav-control-item img {
+  padding: 8px;
+}
+
+@media screen and (max-width: 483px) {
+  .nav-control-item {
+    margin: 0;
+    padding: 0;
+  }
+  .nav-notification {
+    display: none;
+  }
 }
 
 /* FORMS */
@@ -274,6 +300,12 @@ h2 {
   flex-direction: column;
   flex: 2;
 }
+@media screen and (max-width: 483px) {
+  #primary {
+    padding: 0;
+    margin: 0;
+  }
+}
 
 #info-contents {
   border-bottom: 1px solid #e0e0e0;
@@ -291,6 +323,11 @@ h2 {
   justify-content: space-between;
   align-items: center;
   font-size: 1.4rem;
+}
+@media screen and (max-width: 483px) {
+  #info {
+    display: block;
+  }
 }
 
 .info-text {
